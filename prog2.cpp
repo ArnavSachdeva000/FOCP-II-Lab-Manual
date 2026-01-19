@@ -1,4 +1,4 @@
-//C++ hello world code
+//Enter roll no.
 
 #include<iostream>
 using namespace std;
@@ -8,7 +8,7 @@ int main()
     int rno;
     // printf("\n Enter rno: ");
     cout<<"\n Enter rno;";
-    
+
     // scanf("%d",&rno);
     cin>>rno;
 
