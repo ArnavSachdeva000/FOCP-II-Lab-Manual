@@ -1,25 +1,34 @@
-/*A shopkeeper wants to calculate the total bill amount after applying a 20% discount on the purchase.
-Implement a solution to accept item no., quantity, and unit price. Compute the amount and apply 20% discount.*/
+// Q4: Calculate a total bill after a 20% discount.
 
 #include<iostream>
 #include<iomanip>
+#include<cmath>
 using namespace std;
+
+const float discount=0.20f;
 
 int main()
 {
-    int x; 
-    double y,z,total,final,discount;
-    cout<<"Enter item no.: ";
-    cin>>x;
-    cout<<"Enter quantity of items: ";
-    cin>>y;
-    cout<<"Enter the unit price of the item: ";
-    cin>>z;
-    total = y * z;
-    discount = total * 0.2 ;
-    final = total - discount;
-    cout<<"Total bill amount after applying 20% discount: "<<final<<"\n\n";
+    float ad;
+    float no,Q;
+    float P;
+    cout<<"Item Number: ";
+    cin>>no;
+    cout<<"Quantity: ";
+    cin>>Q;
+    cout<<"Unit Price: ";
+    cin>>P;
+
+
+    ad= (P)*discount;
+    ad = P-ad;
+    float f;
+    f = ad*Q;
+
+
+    cout<<"Price after discount of item no "<<no<<" :"<<f<<endl;
+
+
 
     return 0;
 }
-
