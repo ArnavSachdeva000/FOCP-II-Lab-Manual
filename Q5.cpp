@@ -1,3 +1,6 @@
+/*Q5. A student wants to swap the values of two variables for practising coding basics.
+Implement a solution to swap two numbers using different techniques.*/
+
 #include<iostream>
 using namespace std;
 

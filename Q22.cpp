@@ -1,6 +1,4 @@
-/* Q22. A jewelry design tool generates hollow diamond outlines for patterns. Implement a solution to display a
-hollow diamond pattern of * */
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 int main() {

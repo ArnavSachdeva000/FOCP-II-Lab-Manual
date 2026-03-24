@@ -15,3 +15,23 @@ You are required to develop the code so that the password validation logic can b
 #include<iostream>
 #include<string>
 using namespace std;
+int main(){
+    string password;
+    bool upper = false, lower = false, digit = false,special = false;
+    cout <<"Enter your password: ";
+    cin >>password;
+    for(int i=0; i<password.length();i++){
+        char ch = password[i];
+        if(ch>='A' && ch<='Z')
+            upper=true;
+        else if(ch>='a' && ch<='z')
+            lower=true;
+        else if(ch>='0' && ch<='9')
+            digit=true;
+        else if(ch=='@' || ch=='#' || ch=='$' || ch=='%' || ch=='!' || ch=='&' || ch=='*' || ch=='/' || ch==':' || ch==';' )
+            special=true;
+    }
+    if(upper && lower && digit && special) cout << "Password is VALID"<<endl;
+    else cout << "Password is INVALID"<<endl;
+    return 0;
+}
